@@ -1,5 +1,5 @@
 #!/usr/bin/expect -f
-spawn ssh-copy-id $argv
+spawn ssh-copy-id $argv -f
 expect "password:"
 send "YOUR_PASSWORD\n"
 expect eof
