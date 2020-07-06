@@ -12,7 +12,6 @@ openshift_install_examples=true
 openshift_docker_options='--selinux-enabled --insecure-registry 172.30.0.0/16'
 openshift_master_identity_providers=[{'name': 'htpasswd_auth', 'login': 'true', 'challenge': 'true', 'kind': 'HTPasswdPasswordIdentityProvider'}]
 openshift_master_htpasswd_users={'admin' : '$apr1$zTCG/myL$mj1ZMOSkYg7a9NLZK9Tk9.'}
-openshift_master_default_subdomain=apps.public_hostname_master_node
 openshift_master_cluster_public_hostname=public_hostname_master_node
 openshift_master_cluster_hostname=public_hostname_master_node
 openshift_disable_check=disk_availability,docker_storage,memory_availability
